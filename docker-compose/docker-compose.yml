@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  web:
+    image: php:7.0-apache
+    build: ../php/
+    ports:
+      - 8080:80
+    volumes:
+      - ../:/var/www/html
+    links:
+      - db
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: my2276
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 5200:8080
