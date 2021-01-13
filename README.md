@@ -1,5 +1,9 @@
 "# docker" 
 
+#### 目錄
+
+``cd  docker-compose``
+
 #### 啟用
 
 `` docker-compose up -d ``
