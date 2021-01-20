@@ -1,5 +1,13 @@
 "# docker" 
 
+#### 查詢所有網路卡
+
+``docker network ls``
+
+#### 建立網路
+
+``docker network creat 網路卡名稱``
+
 #### 目錄
 
 ``cd  docker-compose``
